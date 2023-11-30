@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: rgb(109, 109, 229);">
+    <div class="container" id="loginContainer">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label  for="loginUsername">Username:</label>
+            <input style="margin:  10px;" type="text" id="loginUsername" name="loginUsername" required><br>
+            <label style="padding: 10px ; margin: 10px;" for="loginPassword">Password:</label>
+            <input style="margin: 10px;" type="password" id="loginPassword" name="loginPassword" required><br>
+            <input type="submit" value="Login">
+        </form>
+        <div id="loginMessage"></div>
+        <p>Don't have an account? <a href="#" onclick="showRegistration()">Register here</a></p>
+    </div>
+
+    <div class="container" id="registrationContainer" style="display:none;">
+        <h2>Register</h2>
+        <form id="registrationForm">
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" name="regUsername" required><br>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" name="regPassword" required><br>
+            <input type="submit" value="Register">
+        </form>
+        <div id="regMessage"></div>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a></p>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>
